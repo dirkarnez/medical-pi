@@ -2,7 +2,7 @@
 # Makefile
 #
 
-CIRCLEHOME = ./circle-step45.1/
+CIRCLEHOME = /circle-step45.1/
 LVGLHOME = $(CIRCLEHOME)/addon/lvgl/
 
 OBJS	= main.o kernel.o
