@@ -18,7 +18,7 @@
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 #include "kernel.h"
-#include "../lvgl/demos/lv_demos.h"
+// #include "../lvgl/demos/lv_demos.h"
 
 static const char FromKernel[] = "kernel";
 
@@ -90,7 +90,7 @@ TShutdownMode CKernel::Run (void)
 {
 	m_Logger.Write (FromKernel, LogNotice, "Compile time: " __DATE__ " " __TIME__);
 
-	lv_demo_widgets ();
+	// lv_demo_widgets ();
 
 	while (1)
 	{
