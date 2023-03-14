@@ -17,10 +17,11 @@ RUN sudo rm /var/lib/apt/lists/lock && \
 	curl
 	
 
-
+  # curl -L -O -J https://github.com/dirkarnez/rsta2-circle-prebuilt/releases/download/step45.1/circle-step45.1.zip && \
+  # unzip circle-step45.1.zip -d "/circle-step45.1" && \
+  
 CMD cd /src/workspace && \
-  curl -L -O -J https://github.com/dirkarnez/rsta2-circle-prebuilt/releases/download/step45.1/circle-step45.1.zip && \
-  unzip circle-step45.1.zip -d "/circle-step45.1" && \
+  ls && \
   make && \
   zip --symlinks -r medical-pi-v1.0.0.zip . && \
   exit
