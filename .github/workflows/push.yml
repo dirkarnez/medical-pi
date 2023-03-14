@@ -8,7 +8,7 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     env:
       libraryName: medical-pi
       targetZip: medical-pi-${{ github.ref_name }}.zip
