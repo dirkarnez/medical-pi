@@ -23,5 +23,5 @@ CMD cd /src/workspace && \
   unzip circle-step45.1.zip -d "/circle-step45.1" && \
   make && \
   cp -R ./sample ../../export
-	zip --symlinks -r medical-pi.zip . && \
+	zip --symlinks -r medical-pi-v1.0.0.zip . && \
 	exit
