@@ -15,14 +15,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       
-      - run: mkdir -p ./workspace
-      
       - name: Build the stack
         run: docker-compose up --build && docker-compose down
 
       - name: Release prebuilt
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "workspace/${{ env.targetZip }}"
+          artifacts: "${{ env.targetZip }}"
           allowUpdates: true
           token: ${{ secrets.GITHUB_TOKEN }}
