@@ -22,5 +22,5 @@ curl -L -O -J https://github.com/dirkarnez/rsta2-circle-prebuilt/releases/downlo
 unzip circle-step45.1.zip -d "/circle-step45.1" && \
 cd ./app/src && \
 make && \
-zip --symlinks -r medical-pi-v1.0.0.zip . && \
+zip --symlinks -r medical-pi-v1.0.0.zip ./build && \
 exit
