@@ -22,6 +22,5 @@ CMD cd /src/workspace && \
   curl -L -O -J https://github.com/dirkarnez/rsta2-circle-prebuilt/releases/download/step45.1/circle-step45.1.zip && \
   unzip circle-step45.1.zip -d "/circle-step45.1" && \
   make && \
-  cp -R ./sample ../../export
-	zip --symlinks -r medical-pi-v1.0.0.zip . && \
-	exit
+  zip --symlinks -r medical-pi-v1.0.0.zip . && \
+  exit
