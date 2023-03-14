@@ -1,5 +1,7 @@
 FROM armswdev/arm-tools:bare-metal-compilers
 
+RUN mkdir -p /src/workspace/
+
 COPY . /src/workspace/
 WORKDIR /src/workspace/
 
