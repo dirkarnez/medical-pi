@@ -7,7 +7,7 @@ LVGLHOME = $(CIRCLEHOME)/addon/lvgl/
 
 OBJS	= main.o kernel.o
 
-LIBS	= ../liblvgl.a \
+LIBS	= $(LVGLHOME)/liblvgl.a \
 	  $(CIRCLEHOME)/lib/usb/libusb.a \
 	  $(CIRCLEHOME)/lib/input/libinput.a \
 	  $(CIRCLEHOME)/lib/fs/libfs.a \
